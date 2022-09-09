@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 
 
 /**
@@ -8,8 +8,8 @@
  *
  * Return: Always 0 (Success)
  */
-int puts_(void){
+int main(void){
 
-	printf("Programming is like building a multilingual puzzle \n");
+	puts("Programming is like building a multilingual puzzle");
 	return (0);
 }
