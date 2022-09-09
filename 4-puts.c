@@ -8,7 +8,7 @@
  *
  * Return: Always 0 (Success)
  */
-int puts(void){
+int puts_(void){
 
 	printf("Programming is like building a multilingual puzzle \n");
 }
