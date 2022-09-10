@@ -2,11 +2,11 @@
 #include <string.h>
 
 
-/*
+/**
  *
  * main - Entry point
  *
- * Description: 'This program prints text'
+ * Description: This program uses the put function
  *
  * Return: Always 0 (Success)
  */
