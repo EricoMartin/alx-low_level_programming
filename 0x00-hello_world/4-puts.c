@@ -3,10 +3,9 @@
 
 
 /**
- *
  * main - Entry point
  *
- * Description: This program uses the put function
+ * description: This program uses the put function
  *
  * Return: Always 0 (Success)
  */
