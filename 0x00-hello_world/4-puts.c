@@ -6,6 +6,8 @@
  *
  * main - Entry point
  *
+ * Description: 'This program prints text'
+ *
  * Return: Always 0 (Success)
  */
 
