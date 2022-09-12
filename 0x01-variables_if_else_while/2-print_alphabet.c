@@ -20,6 +20,6 @@ int main(void)
 		xter = xter + 1;
 	} while (xter <= 'z');
 
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
