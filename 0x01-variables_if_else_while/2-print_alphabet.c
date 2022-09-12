@@ -13,10 +13,13 @@ int main(void)
 {
 
 	char xter;
+
 	xter = 'a';
 	do {
 		putchar(xter);
 		xter = xter + 1;
 	} while (xter <= 'z');
-	return 0;
+
+	putchar('\n')
+	return (0);
 }
