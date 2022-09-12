@@ -29,7 +29,7 @@ int main(void)
 		putchar(xtr);
 
 		xtr++;
-	} while( xtr <= 'Z')
+	} while( xtr <= 'Z');
 
 	putchar('\n');
 	return (0);
