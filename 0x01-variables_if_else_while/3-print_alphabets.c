@@ -1,15 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
  * main - main function
  * Description -  prints string in lowercase and uppercase
- * Return: 0
+ * Return: return 0
  */
- 
+
 int main(void)
 {
 	char xtr = 'a';
-	
-  do {
+
+	do {
 		putchar(xtr);
 		xtr++;
 	} while (xtr <= 'z');
