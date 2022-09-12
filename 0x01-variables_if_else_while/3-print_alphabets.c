@@ -7,7 +7,7 @@
  
 int main(void)
 {
-	char xter = 'a';
+	char xtr = 'a';
 	
   do {
 		putchar(xtr);
