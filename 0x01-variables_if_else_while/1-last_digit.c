@@ -24,14 +24,15 @@
 int main(void)
 {
 	int n;
+	int m;
+	int o;
 
 	srand(time(0));
 
 	n = rand() - RAND_MAX / 2;
 
-	int o;
 	o = n;
-	int m;
+	
 	m = (o % 10);
 
 	if (m > 5)
