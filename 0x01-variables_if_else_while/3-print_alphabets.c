@@ -18,7 +18,7 @@ int main(void)
 
 	do {
 		putchar(xtr);
-		++;
+		xtr++;
 	} while (xtr <= 'Z');
 
 	putchar('\n');
