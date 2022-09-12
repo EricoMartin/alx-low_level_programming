@@ -29,7 +29,7 @@ int main(void)
 
 	n = rand() - RAND_MAX / 2;
 
-	int o = n
+	int o = n;
 	int m = (o % 10);
 
 	if (m > 5)
