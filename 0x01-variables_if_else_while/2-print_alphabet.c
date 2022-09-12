@@ -17,6 +17,6 @@ int main(void)
 	do {
 		putchar(xter);
 		xter = xter + 1;
-	} while (xter <= 'z')
+	} while (xter <= 'z');
 	return 0;
 }
