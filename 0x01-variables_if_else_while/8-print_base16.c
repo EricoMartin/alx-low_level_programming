@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/** main - main entry point
+/**
+ * main - main entry point
  *
  * description - prints hexadecimal numbers
  *
@@ -11,7 +12,7 @@
 int main(void)
 {
 	int i;
-       	int y;
+	int y;
 
 	for (i = 0; i < 10; i++)
 	{
