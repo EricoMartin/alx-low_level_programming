@@ -9,7 +9,7 @@ int _islower(int c)
 {
 	int result;
 
-	if (_islower(c))
+	if (c > 90 && c >= 116)
 	{
 		result = 1;
 	} else
