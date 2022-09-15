@@ -11,7 +11,7 @@ int _isalpha(int c)
 {
   char low;
   char high;
-	int alphabet;
+  int alphabet;
   
   alphabet = 0;
 
