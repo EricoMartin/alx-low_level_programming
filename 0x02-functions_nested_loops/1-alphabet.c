@@ -1,6 +1,11 @@
-#include "main.h"                                                               
+#include "main.h"
 
-/**                                                                              * main - entry point                                                            * description - A function that prints the alphabets                            *                                                                               * Return: returns zero                                                          */
+/**
+ * main - entry point
+ * description - A function that prints the alphabets
+ *
+ * Return: returns zero
+ */
 
 void print_alphabet(void)
 {
