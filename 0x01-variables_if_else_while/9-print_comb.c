@@ -15,7 +15,7 @@ int main(void)
 
 	while (num < 10)
 	{
-		putchar(48 + num);
+		putchar(num + 48);
 		if (num != 9)
 		{
 			putchar(',');
@@ -23,6 +23,6 @@ int main(void)
 		}
 		num++;
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
