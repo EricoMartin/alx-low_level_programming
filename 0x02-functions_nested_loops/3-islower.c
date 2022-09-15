@@ -9,7 +9,7 @@ int _islower(int c)
 {
 	int result;
 
-	if (!c.isupper())
+	if (islower(c))
 	{
 		result = 1;
 	} else
