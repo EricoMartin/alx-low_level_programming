@@ -5,6 +5,7 @@
  * description - prints numbers
  * Return: no return.
  */
+
 void print_numbers(void)
 {
 	char n = 0;
@@ -15,5 +16,4 @@ void print_numbers(void)
 		n++;
 	}
 	_putchar('\n');
-
 }
