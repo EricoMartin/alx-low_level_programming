@@ -12,12 +12,12 @@
 
 int main(void)
 {
-	int num;
+	int i;
 
-	num = 0;
-	positive_or_negative(num);
+        i = 98;
+        positive_or_negative(i);
 
-	return (num);
+	return (0);
 }
 
 
