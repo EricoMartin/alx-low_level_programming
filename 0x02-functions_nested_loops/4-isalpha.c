@@ -9,12 +9,11 @@
 
 int _isalpha(int c)
 {
-  char low;
-  char high;
-  int alphabet;
+	char low;
+	char high;
+	int alphabet;
 
-  alphabet = 0;
-
+	alphabet = 0;
 	for (low = 'a'; low <= 'z'; low++)
 	{
 		for (high = 'A'; high <= 'Z'; high++)
