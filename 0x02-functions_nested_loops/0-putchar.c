@@ -16,30 +16,30 @@ int main(void)
 	{
 		if (c == '-')
 		{
-			putchar(c);
+			_putchar(c);
 		} else if (c == 'p')
 		{
-			putchar(c);
+			_putchar(c);
 		} else if (c == 'u')
 		{
-			putchar(c);
+			_putchar(c);
 		} else if (c == 't')
 		{
-			putchar(c);
+			_putchar(c);
 		} else if (c == 'c')
 		{
-			putchar(c);
+			_putchar(c);
 		} else if (c == 'h')
 		{
-			putchar(c);
+			_putchar(c);
 		} else if (c == 'a')
 		{
-			putchar(c);
+			_putchar(c);
 		} else if (c == 'r')
 		{
-			putchar(c);
+			_putchar(c);
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
