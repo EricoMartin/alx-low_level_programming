@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet - a print function
  * description - A function that prints the alphabets
  *
- * Return: returns zero
+ * Return: returns void
  */
 
 void print_alphabet(void)
