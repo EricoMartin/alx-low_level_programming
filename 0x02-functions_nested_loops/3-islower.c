@@ -3,6 +3,8 @@
 /**
  * _islower.c - a function that checks for lowercase characters
  *
+ * @c: character input
+ * 
  * description - checks if a character is lowercase
  *
  * Return: returns void
