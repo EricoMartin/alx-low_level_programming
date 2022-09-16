@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
 * main - Fizz Buzz
 * description - a program that prints the numbers from 1 to 100
 * Return: void
 */
+
 int main(void)
 {
 	int i;
