@@ -19,7 +19,7 @@ int _atoi(char *s)
 
 	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
 	{
-		if (s[firstNum] == '-')
+		while (s[firstNum] == '-')
 		{
 			sign *= -1;
 		}
