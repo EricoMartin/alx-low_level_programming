@@ -8,7 +8,9 @@
 
 void print_number(int n)
 {
-int divisor = 1, i, resp;
+int divisor = 1;
+int i = 0;
+int resp = 0;
 
 if (n < 0)
 {
