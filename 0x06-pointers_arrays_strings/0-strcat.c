@@ -7,7 +7,7 @@
  * Return: charcter
  */
 
-char *_strcat(cahr *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int idx;
 	int len;
