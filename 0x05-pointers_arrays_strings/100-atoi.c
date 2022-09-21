@@ -11,6 +11,7 @@ int _atoi(char *s)
 	int sign;
 	int resp;
 	int firstNum;
+	int i;
 	
 	sign = 1;
 	resp = 0;
@@ -22,7 +23,7 @@ int _atoi(char *s)
 			sign *= -1;
 		}
 	}
-	int i;
+
 	for (i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
 	{
 		resp *= 10;
