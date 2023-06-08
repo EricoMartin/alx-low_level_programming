@@ -32,7 +32,7 @@ int comparator(char *s, int n, int m)
 	{
 		if (n == m || n == m + 1)
 			return (1);
-		return (0 + comparator(s, n + 1, m - 1);
+		return (0 + comparator(s, n + 1, m - 1));
 	}
 	return (0);
 }
