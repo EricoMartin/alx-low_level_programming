@@ -8,14 +8,29 @@
 
 int _sqrt_recursion(int n)
 {
-	if (n == 0)
+	return (_sqrt(n, 1));
+}
+
+/**
+ * _sqrt: returns square root of a number
+ * @n: Integer value
+ * @m: Integer value
+ * Return: Integer
+ */
+
+int _sqrt(int n, int m)
+{
+	int sq;
+
+	sq =  m * m;
+	if (sq > n)
 	{
-		return (0);
+		return (-1);
 	}
 
-	if (n == 1)
+	if (sq == n)
 	{
-		return (1);
+		return (m);
 	}
-	return (n * _sqrt_recursion(n));
+	return (_sqrt(n, m + 1));
 }
