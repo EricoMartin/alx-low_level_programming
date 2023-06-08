@@ -8,12 +8,13 @@
 
 int factorial(int n)
 {
+	int num;
 	if (n == 0 || n == 1)
 	{
 		return (1);
 	}
 
-	int num = factorial(n) + factorial(n-1);
+	num = factorial(n) + factorial(n-1);
 	n--;
 	return (num);
 }
