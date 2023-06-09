@@ -2,11 +2,12 @@
 
 /**
  * _putchar - put character
- * @n: integer value
+ * @c: character value
  * Return: Integer value
  */
 
-int _putchar(char n)
+int _putchar(char c)
 {
-	return (n);
+	return (write(1, &c, 1));
 }
+

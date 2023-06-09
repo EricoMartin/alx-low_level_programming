@@ -1,10 +1,29 @@
 #include "main.h"
 
 /**
-* _strpbrk - string
-* @s: character set
-* @accept: character input
-* Return: character set
-*/
+ * _strpbrk - memory
+ * @s: character
+ * @accept: character
+ * Return: character
+ */
 
-char *_strpbrk(char *s, char *accept);
+
+char *_strpbrk(char *s, char *accept)
+{
+	int k;
+
+
+	while (*s)
+	{
+		for (k = 0; accept[k]; k++)
+		{
+		if (*s == accept[k])
+		return (s);
+		}
+	s++;
+	}
+
+
+	return ('\0');
+}
+
