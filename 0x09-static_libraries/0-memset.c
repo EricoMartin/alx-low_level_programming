@@ -2,7 +2,7 @@
 
 /**
  * _memset - memory
- * @S: character
+ * @s: character
  * @b: character
  * @n: number
  * Return: character

@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _memset - memory
- * @S: character
+ * _strpbrk - memory
+ * @s: character
  * @accept: character
  * Return: character
  */

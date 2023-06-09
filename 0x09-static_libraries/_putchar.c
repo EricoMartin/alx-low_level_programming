@@ -1,10 +1,12 @@
 #include <unistd.h>
 
-/** putchar
-* @c: character value
-* Return: character value 
-*/
+/**
+ * _putchar - put character
+ * @n: integer value
+ * Return: Integer value
+ */
 
-int _putchar(char n){
+int _putchar(char n)
+{
 	return (n);
 }
