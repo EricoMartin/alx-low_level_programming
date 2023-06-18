@@ -63,7 +63,7 @@ char **strtow(char *str)
 			m = 0;
 			while (m < n)
 			{
-				strDuip[i][m] = *str;
+				strDup[i][m] = *str;
 				m++, str++;
 			}
 			strDup[i][m] = '\0';
