@@ -4,7 +4,7 @@
 
 
 /**
- * create_array - A function that creates an array of chars, 
+ * create_array - A function that creates an array of chars,
  * and initializes it with a specific char.
  *
  * @size: Size of the arrray.
@@ -15,14 +15,12 @@
 char *create_array(unsigned int size, char c)
 {
 	char *arr;
-	int i, s;
+	unsigned int i;
 
 	arr = malloc(sizeof(char) * size);
-	s = (int) size;
-	for (i = 0; i <= s; i++)
+	for (i = 0; i <= size; i++)
 	{
 		arr[i] = c;
 	}
-	free(arr);
 	return (arr);
 }
