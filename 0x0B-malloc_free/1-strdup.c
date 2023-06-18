@@ -5,7 +5,7 @@
 
 
 /**
- * strdup - function that returns a pointer to a newly allocated 
+ * *_strdup - function that returns a pointer to a newly allocated
  * space in memory
  *
  * @str: an array of strings
@@ -20,7 +20,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	for (j = 0; str[j] !='\0'; j++)
+	for (j = 0; str[j] != '\0'; j++)
 		sum += 1;
 	new_str = malloc(sizeof(char) * sum + 1);
 	if (new_str == NULL)
@@ -35,7 +35,6 @@ char *_strdup(char *str)
 			new_str[i] = str[i];
 			i++;
 		}
-		
 	}
 	new_str[i] = '\0';
 	return (new_str);
