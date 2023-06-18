@@ -15,7 +15,7 @@
 char *_strdup(char *str)
 {
 	char *new_str;
-	int i, j, t;
+	int i, j;
 	int sum = 0;
 
 	if (str == NULL)
