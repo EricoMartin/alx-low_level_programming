@@ -2,7 +2,12 @@
 #define DOG_H
 
 /*
- * dog - A structure that represents a dog.
+ * struct dog - A structure that represents a dog.
+ * @name: Dog name.
+ * @age: Dog age.
+ * @owner: Dog owner.
+ *
+ * Description: Dog structure
  */
 
 
