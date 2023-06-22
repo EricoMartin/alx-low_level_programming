@@ -8,7 +8,6 @@
  * @name: Dog name
  * @age: Dog age
  * @owner: Dog owner
- * Returns: A dog struct
  */
 
 
