@@ -6,7 +6,7 @@
 /**
  * init_dog - Initialize dog
  *
- * @struct dog: a struct of dogs
+ * @d: a pointer to struct of dogs
  * @name: dog name
  * @age:  dog age
  * @owner: dog owner
