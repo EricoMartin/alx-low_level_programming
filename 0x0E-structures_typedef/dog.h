@@ -2,7 +2,7 @@
 #define DOG_H
 
 /*
- * struct dog - A structure that represents a dog.
+ * dog - A structure that represents a dog.
  */
 
 
