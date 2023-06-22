@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#ifndef DOG_H
-#define DOG_H
 
 /*
- * Dog - A structure that represents a dog.
+ * Struct dog - A structure that represents a dog.
  *
  * @name: Dog name
  * @age: Dog age
