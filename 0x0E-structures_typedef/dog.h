@@ -1,5 +1,8 @@
+#ifndef DOG_H
+#define DOG_H
+
 /*
- * Struct dog - A structure that represents a dog.
+ * struct dog - A structure that represents a dog.
  */
 
 
@@ -9,4 +12,4 @@ struct dog
 	float age;
 	char *owner;
 };
-
+#endif
