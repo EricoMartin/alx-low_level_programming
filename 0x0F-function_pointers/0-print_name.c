@@ -2,19 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * printer - print the string
- * @str: string to print
- * return: Nothing
- */
-
-void printer(char *str)
-{
-	if (str)
-	{
-		printer(str);
-	}
-}
 
 /**
  * print_name - print a name
@@ -25,6 +12,7 @@ void printer(char *str)
 
 void print_name(char *name, void (*f)(char *))
 {
-	print_name(*name, printer(*name));
+	if (name && (*f)(char))
+		f(name);
 
 }
