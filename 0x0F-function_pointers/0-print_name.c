@@ -8,7 +8,7 @@
  * return: Nothing
  */
 
-void printer(char* str)
+void printer(char *str)
 {
 	if (str)
 	{
