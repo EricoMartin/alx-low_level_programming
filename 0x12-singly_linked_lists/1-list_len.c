@@ -12,7 +12,7 @@ size_t list_len(const list_t *h)
 
 	nodes = 1;
 
-	if (h->next == NULL)
+	if (h == NULL)
 		return (0);
 	while (h->next != NULL)
 	{
