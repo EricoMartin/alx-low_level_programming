@@ -1,6 +1,24 @@
 #include "main.h"
 
 /**
+ *
+ * _strlen - function to get the length of a string
+ * @str: the string to check its length
+ * Return: Integer
+ */
+
+unsigned int _strlen(const char *str)
+{
+	unsigned int count = 0;
+
+	while (str[count] != '\0')
+	{
+		count++;
+	}
+	return (count);
+}
+
+/**
  * binary_to_uint - function that converts a binary string
  * to unsigned integer representation
  *
@@ -14,7 +32,7 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == NULL)
 		return (0);
-	for (int i = strlen(b) - 1; i >= 0; i--)
+	for (int i = _strlen(b) - 1; i >= 0; i--)
 	{
 		if (b[i] != "1" && b[i] != "0")
 			return (0);
