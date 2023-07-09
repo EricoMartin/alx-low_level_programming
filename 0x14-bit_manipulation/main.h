@@ -3,7 +3,10 @@
 
 #include <stdio.h>
 #include <stddef.h>
+#include <unistd.h>
 
 unsigned int binary_to_uint(const char *b);
+_putchar(char c);
+void print_binary(unsigned long int n);
 
 #endif
