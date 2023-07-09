@@ -12,11 +12,11 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int xorm = n ^ m;
+	unsigned long int xorm;
 	unsigned long int bits = 0;
 
-	for (bits; xorm > 0; bits += (xorm & 1))
-		xorm >>= 1;
+	for (xorm = n ^ m; xorm > 0; xorm >>= 1)
+		bits += (xorm & 1);
 
 	return (bits);
 }
