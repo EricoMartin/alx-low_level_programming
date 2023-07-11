@@ -12,37 +12,42 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int file;
-	ssize_t read_check, wcount;
+	int fileOen;
+	int i;
+	int fileRead;
 	char *buffer;
 
-	if (filename == NULL) /*check if file is present*/
+	if (filename == NULL)
 		return (0);
-
-	file = open(filename, O_RDONLY); /*open file*/
-
-	if (file == -1)
-		return (0);
-
-	/*get the size of buffer from number of letters*/
 	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
+		return (0);
+	fileOpen = open(filename, O_RDONLY);
+	if (fileOpen == -1)
 	{
 		free(buffer);
 		return (0);
 	}
 
-	read_check = read(file, buffer, letters); /*read file*/
-	if (read_check == -1) /*check if read failed*/
+	fileRead = read(fileOpen, buffer, letters);
+	if (fileRead == -1)
+	{
+		close(fileOpen);
+		free(buffer);
 		return (0);
+	}
 
-	wcount = write(STDOUT_FILENO, buffer, read_check); /*write to POSIX*/
-	if (wcount == -1 || read_check != wcount) /*check if write failed*/
-		return (0);
+	for (i = 0; i < fileRead; i++)
+	{
+		if (write(STDOUT_FILENO, &buffer[i], 1) == -1)
+		{
+			close(fileOpen);
+			free(buffer);
+			return (0);
+		}
 
+	}
+	close(fileOpen);
 	free(buffer);
-
-	close(file); /*close file*/
-
-	return (wcount);
+	return (fileRead);
 }
