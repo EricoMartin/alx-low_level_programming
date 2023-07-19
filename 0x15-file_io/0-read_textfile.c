@@ -21,14 +21,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fileOpen = open(filename, O_RDONLY);
 	if (fileOpen == -1)
 	{
-		free(buffer);
 		return (0);
 	}
 	fileRead = read(fileOpen, buffer, letters);
 	if (fileRead == -1)
 	{
 		close(fileOpen);
-		free(buffer);
 		return (0);
 	}
 	buffer = malloc(sizeof(char) * letters);
