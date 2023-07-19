@@ -12,16 +12,11 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fileOpen;
-	int i;
-	int fileRead;
+	int fileOpen, i, fileRead;
 	char *buffer;
 	ssize_t readfile;
 
 	if (filename == NULL)
-		return (0);
-	buffer = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
 		return (0);
 	fileOpen = open(filename, O_RDONLY);
 	if (fileOpen == -1)
@@ -29,7 +24,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buffer);
 		return (0);
 	}
-
 	fileRead = read(fileOpen, buffer, letters);
 	if (fileRead == -1)
 	{
@@ -37,6 +31,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buffer);
 		return (0);
 	}
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
+		return (0);
 
 	for (i = 0; i < fileRead; i++)
 	{
@@ -47,7 +44,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			return (0);
 		}
 	}
-
+	readfile = write(STDOUT_FILENO, buffer, fileRead);
 	close(fileOpen);
 	free(buffer);
 	return (readfile);
