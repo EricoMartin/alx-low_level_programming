@@ -1,4 +1,4 @@
-#include "main.h"
+#include "my_elf.h"
 
 
 #define MAXSIZE 1024
