@@ -52,11 +52,10 @@ unsigned int binary_to_uint(const char *b)
 	{
 		sum = to_int(b[i]);
 
-		if (sum != 1 && sum != 0)
+		if (sum != 0 && sum != 1)
 			return (0);
 
-		ans = num * base;
-		ans += ans;
+		ans += sum * base;
 		base *= 2;
 	}
 	return (ans);
