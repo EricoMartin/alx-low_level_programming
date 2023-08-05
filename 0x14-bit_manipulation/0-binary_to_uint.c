@@ -21,11 +21,11 @@ unsigned int _atoi(char c)
  *
  * Return: the length of the string
 */
-unsined int _strlen(const char *str(
+unsigned int _strlen(const char *str)
 {
 	unsigned int i;
 
-	for (i = 0; str[i] != '\0', i++)
+	for (i = 0; str[i] != '\0', i++)};
 
 	return (i);
 }
