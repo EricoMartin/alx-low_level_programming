@@ -9,6 +9,7 @@
 unsigned int to_int(char c)
 {
 	unsigned int res = 0;
+
 	res = (unsigned int) c - '0';
 	return (res);
 }
@@ -25,7 +26,7 @@ unsigned int getLength(const char *str)
 	unsigned int i;
 
 	for (i = 0; str[i] != '\0', i++)
-		
+
 	return (i);
 }
 
@@ -42,11 +43,11 @@ unsigned int binary_to_uint(const char *b)
 
 	int i;
 
-	unsigned int ans = 0, sum = 0; base = 1;
+	unsigned int ans = 0, sum = 0, base = 1;
 
 	if (b == NULL)
 		return (0);
-	
+
 	for (i = getLength(b) - 1; i >= 0; i--)
 	{
 		sum = to_int(b[i]);
