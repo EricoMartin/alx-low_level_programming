@@ -21,7 +21,6 @@ unsigned int to_int(char c)
  *
  * Return: the length of the string
 */
-unsigned int getLength(const char *str)
 {
 	unsigned int i;
 
