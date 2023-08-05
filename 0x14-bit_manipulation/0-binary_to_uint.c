@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * to_int - this function converts a char to an int
+ * _atoi- this function converts a char to an int
  *
  * @c: char to be converted to int
  * Return: an integer representation
  */
-unsigned int to_int(char c)
+unsigned int _atoi(char c)
 {
 	unsigned int res = 0;
 
@@ -15,12 +15,13 @@ unsigned int to_int(char c)
 }
 
 /**
- * getLength - this function returns the length of a string
+ * _strlen- this function returns the length of a string
  *
  * @str: the string to get its length
  *
  * Return: the length of the string
 */
+unsined int _strlen(const char *str(
 {
 	unsigned int i;
 
@@ -47,9 +48,9 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 		return (0);
 
-	for (i = getLength(b) - 1; i >= 0; i--)
+	for (i = _strLen(b) - 1; i >= 0; i--)
 	{
-		sum = to_int(b[i]);
+		sum = _atoi(b[i]);
 
 		if (sum != 0 && sum != 1)
 			return (0);
