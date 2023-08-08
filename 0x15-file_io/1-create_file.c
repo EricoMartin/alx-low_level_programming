@@ -1,4 +1,4 @@
-#include "main22.h"
+#include "main2.h"
 
 /**
  * create_file - a function that creates a file

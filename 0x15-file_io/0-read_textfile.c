@@ -1,4 +1,4 @@
-#include "main2.h"
+#include "main.h"
 
 /**
  * read_textfile - Afunction that reads text files
