@@ -6,13 +6,13 @@
  * @h: pointer to head
  * @idx: position to insert new node
  * @n: the new integer value
- * @Return: addres of new node or NULL otherwise
+ * Return: addres of new node or NULL otherwise
  */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *tmp = *h, *new;
-	
+
 	if (idx == NULL)
 	{
 		return (add_dnodeint(h, n));
@@ -27,11 +27,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		return (add_dnodeint_end(h, n));
 	}
-	new = malloc(size_of(dlistint_t ));
-	
+	new = malloc(size_of(dlistint_t));
+
 	if (new == NULL)
 	{
-		Return (NULL);
+		return (NULL);
 	}
 	new->n = n;
 	new->prev = tmp;
