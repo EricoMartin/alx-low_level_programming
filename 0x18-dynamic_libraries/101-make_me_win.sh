@@ -1,3 +1,3 @@
 #!/bin/bash
 
-export LD_PRELOAD="$PWD/libgigmill.so"
+export LD_PRELOAD="$PWD/../randnum.so"
