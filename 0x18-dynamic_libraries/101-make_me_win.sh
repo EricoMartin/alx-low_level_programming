@@ -1,2 +1,3 @@
 #!/bin/bash
-LD_PRELOAD=$PWD/libgigmill.so ./gm 9 8 10 24 75 9
+gcc -shared -o libgigmill.so -fPIC gigamill.c
+export LD_PRELOAD=./libgigmill.so:$LD_LIBRARY_PATH
