@@ -6,7 +6,7 @@
  * @size: Size of the array
  *
  * Return: If an error occurs - NULL.
- *	otherwise - a pointer to the new hash table.
+ *		Otherwise - a pointer to the new hash table.
  *
  */
 
