@@ -16,19 +16,22 @@
 
 int linear_search(int *array, size_t size, int value)
 {
-	int count = 0;
+	int count;
 
-	if (array == NULL)
-		return (-1);
-	while (array[count] < (int) size)
+	if (array == NULL || size == 0)
 	{
-		if (array[count] == value)
+		return (-1);
+	}
+	else
+	{
+		for (count = 0; count < (int) size; count++)
 		{
 			printf("Value checked array[%u] = [%d]\n", count, array[count]);
-
-			return (count);
+			if (array[count] == value)
+			{
+				return (count);
+			}
 		}
-		count++;
 	}
 	return (-1);
 }
